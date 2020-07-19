@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">New4shop</string>
+
+    <string name="intro_string">
+        Quia sed consequatur rem quia molestias nulla quia. Eos optio soluta asperiores in similique
+        Quia sed consequatur rem quia molestias nulla quia. Eos optio soluta asperiores in similique</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN Up</string>
+    <string name="facebook_app_id">1259934651063433</string>
+    <string name="fb_login_protocol_scheme">fb1259934651063433 </string>
+</resources>

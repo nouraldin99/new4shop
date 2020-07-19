@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:visibility="invisible"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/sign_up"
+                android:textColor="#393939"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/TextView"
+                android:layout_marginTop="41dp"
+                android:text="Username" />
+
+            <EditText
+                android:id="@+id/email_et"
+                style="@style/EditText"
+                android:layout_marginTop="0dp"
+                android:ems="20"
+                android:inputType="textEmailAddress"
+
+                android:padding="2dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/TextView"
+                android:layout_marginTop="28dp"
+                android:text="Email"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/pass_et"
+                style="@style/EditText"
+                android:ems="20"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    android:gravity="center_vertical">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:ccp_defaultNameCode="SA" />
+                    <!--            app:ccp_defaultLanguage="FRENCH"-->
+                    <!--            app:ccp_contentColor="@color/black"-->
+                    <!--            app:ccp_arrowColor="@color/md_white"-->
+                    <!--            app:ccp_textSize="20sp"-->
+                    <!--            app:ccp_arrowSize="20dp"-->
+                    <!--            app:ccp_customMasterCountries="AD,BT,CL,HT,US,GB,OM,NZ"-->
+                    <!--            app:ccp_countryPreference="US,NZ"-->
+                    <!--            app:ccp_flagBorderColor="@color/black"-->
+                    <!--            app:ccp_textGravity="RIGHT"-->
+                    <!--            app:ccp_showNameCode="true"-->
+                    <!--            app:ccp_showFlag="true"-->
+                    <!--            app:ccp_showFullName="true"-->
+                    <!--            app:ccp_clickable="true"-->
+                    <!--            app:ccp_showPhoneCode="true"-->
+                    <!--            app:ccp_autoDetectCountry="true"-->
+                    <!--            app:ccp_countryAutoDetectionPref="SIM_ONLY"-->
+                    <!--            app:ccp_autoDetectLanguage="true"-->
+                    <!--            app:ccp_autoFormatNumber="true"-->
+                    <!--            app:ccp_rememberLastSelection="true"-->
+                    <!--            app:ccp_selectionMemoryTag="signupCCP"-->
+                    <!--            app:ccp_showArrow="false"-->
+                    <!--            app:ccp_hintExampleNumber="true"-->
+                    <!--            app:ccp_hintExampleNumberType="FIXED_LINE"-->
+                    <!--            app:ccp_excludedCountries="in,us,pk"-->
+                    <!--            app:ccpDialog_keyboardAutoPopup="false"-->
+                    <!--            app:ccpDialog_allowSearch="false"-->
+                    <!--            app:ccpDialog_showPhoneCode="false"-->
+                    <!--            app:ccpDialog_showFastScroller="false"-->
+                    <!--            app:ccpDialog_fastScroller_bubbleColor="@color/colorAccent"-->
+                    <!--            app:ccpDialog_fastScroller_handleColor="@color/colorAccent"-->
+                    <!--            app:ccpDialog_backgroundColor="@color/md_white"-->
+                    <!--            app:ccpDialog_searchEditTextTint="@color/txt_color"-->
+                    <!--            app:ccpDialog_textColor="@color/black"-->
+                    <!--            app:ccpDialog_showCloseIcon="true"-->
+                    <!--            app:ccpDialog_showFlag="false"-->
+                    <!--            app:ccpDialog_showTitle="false"-->
+                    <!--            app:ccpDialog_initialScrollToSelection="true"/>-->
+                    <!--            app:ccp_hintExampleNumberFormat="NATIONAL"-->
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ex : 986-786-421"
+                        android:inputType="phone"
+                        android:background="@null"
+
+                        />
+
+
+                </LinearLayout>
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/eye_24dp"
+                android:hint="Password"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:layout_marginTop="30dp"
+                android:drawableEnd="@drawable/eye_24dp"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Already have account?"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/login_singup_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sign up"
+                    android:textColor="#F46B49"
+                    android:textSize="15sp"
+                    android:textStyle="" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/email_log_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="41dp"
+                android:background="@drawable/start_buton"
+                android:text="signup"
+                android:textAlignment="center"
+                android:textColor="@color/md_white"
+                android:textSize="17sp" />
+
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/imageView2"-->
+            <!--            android:layout_width="7dp"-->
+            <!--            android:layout_height="44dp"-->
+            <!--            app:srcCompat="@drawable/fb" />-->
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/girl"
+    android:orientation="vertical"
+    tools:context=".Activites.LogAndSignButtum">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+           style="@style/Logo_Image"
+            android:layout_marginTop="95dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome To"
+            android:layout_marginTop="113dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEW4SHOP"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="35sp"
+            />
+        <Button
+            android:id="@+id/sign_button"
+           style="@style/Button"
+            android:text="Sign Up"
+            android:layout_marginTop="90dp"
+            />
+
+        <Button
+            android:id="@+id/log_button"
+            style="@style/Button"
+            android:background="@drawable/sign_up_button"
+            android:text="Sign In"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="18dp"
+            />
+
+        <Button
+            style="@style/Button"
+            android:background="@drawable/visitor_button"
+            android:text="Visitor"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="18dp"/>
+    </LinearLayout>
+</LinearLayout>
